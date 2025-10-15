@@ -1,4 +1,4 @@
-package array_list;
+package collections_demo.array_list;
 
 public class SampleDynamicArrayImpl {
 

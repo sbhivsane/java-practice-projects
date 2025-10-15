@@ -1,4 +1,4 @@
-package arrays;
+package collections_demo.arrays;
 
 public class Employee implements Comparable<Employee>{
     String name;

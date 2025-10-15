@@ -1,6 +1,4 @@
-package array_list;
-
-import java.util.Arrays;
+package collections_demo.array_list;
 
 public class Client {
     static void main() {

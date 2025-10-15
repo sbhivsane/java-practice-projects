@@ -1,18 +1,23 @@
-package array_list;
+package collections_demo.linked_list;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.ListIterator;
+import java.util.*;
 
-public class ArrayListDemo {
+public class LinkedListDemo {
 
     static void main() {
 
 
+        LinkedList<Integer> numberNodes = new LinkedList<>();
+        numberNodes.offerFirst(2); // their are some methods that are specific to the LinkedList class
+        System.out.println(numberNodes);
+
+
+
+        // below all will work same as that of ArrayList just underline implementation will be diffrent
+
         // Adding the elements to the ArrayList
 
-        List<Integer> numbers = new ArrayList<>();
+        List<Integer> numbers = new LinkedList<>();
 
         numbers.add(10); // idx=0
         numbers.add(20); // idx=1
