@@ -78,6 +78,7 @@ public class ArrayListDemo {
         }
 
 
+
         Object[] array = numbers.toArray();
         System.out.println(Arrays.toString(array));
         List<Integer> subList = numbers.subList(2, 5); // get the subList of the arrayList

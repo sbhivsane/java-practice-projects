@@ -168,7 +168,7 @@ public class AdvanceStreamsQuestions {
                             Double avg = empList.stream().collect(Collectors.averagingDouble(Employee::getSalary));
                             return empList.stream().filter(e -> e.getSalary() > avg).map(Employee::getName).toList();
                         }
-                )))
+                )));
 
 
         //5. Given a list of strings, reverse each string and collect them into a list using Streams.
