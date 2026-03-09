@@ -161,6 +161,14 @@ public class AdvanceStreamsQuestions {
 
 
         //4. From a list of employees, find names of all employees who earn more than the department’s average salary.
+        employees.stream().collect(Collectors.groupingBy(Employee::getDept,
+                Collectors.collectingAndThen(
+                        Collectors.toList(),
+                        empList -> {
+                            Double avg = empList.stream().collect(Collectors.averagingDouble(Employee::getSalary));
+                            return empList.stream().filter(e -> e.getSalary() > avg).map(Employee::getName).toList();
+                        }
+                )))
 
 
         //5. Given a list of strings, reverse each string and collect them into a list using Streams.

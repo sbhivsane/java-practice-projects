@@ -16,7 +16,20 @@ public class Employee {
     }
 
     @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+
+        if (obj == null || getClass() != obj.getClass()) return false;
+
+        Employee other = (Employee) obj;
+
+        return this.id == other.id
+                && Objects.equals(this.name, other.name)
+                && Objects.equals(this.dept, other.dept);
+    }
+
+    @Override
     public int hashCode() {
-        return Objects.hash(id,name,age);
+        return Objects.hash(this.id,this.name,this.age,this.dept);
     }
 }

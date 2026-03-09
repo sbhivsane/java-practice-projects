@@ -90,13 +90,14 @@ public class BasicStreamQuestions {
         boolean hasJava = madStrings.stream().anyMatch(s -> s.toLowerCase().contains("java"));
         System.out.println(hasJava);
 
+
+
         //15. Given a list of integers, find if all numbers are positive using Streams.
         List<Integer> integers7 = List.of(1, 2,3);
         boolean allPositive = integers7.stream().allMatch(i -> i > 0);
         System.out.println(allPositive);
 
     }
-
 }
 
 

@@ -12,9 +12,8 @@ void main() {
         if(internalString.charAt(i)==stringByUser.charAt(0))
             counter++;
     }
-
+    Map<Integer,Integer> dataMap = new HashMap<>();
     System.out.println("The character "+stringByUser.charAt(0)+" count is "+counter);
-
 
 
 }
