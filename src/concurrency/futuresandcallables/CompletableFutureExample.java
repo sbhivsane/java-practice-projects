@@ -15,7 +15,7 @@ public class CompletableFutureExample {
                 Executors.defaultThreadFactory(),
                 new ThreadPoolExecutor.AbortPolicy()
         );
-
+        CompletableFuture.runAsync(() -> System.out.println("test"));
         CompletableFuture<String> completableFuture = CompletableFuture.supplyAsync(
                 ()->{
                     return "Task Completed";

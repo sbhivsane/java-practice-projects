@@ -70,10 +70,16 @@ public class BasicStreamQuestions {
         Double average = integers5.stream().filter(i -> i % 2 == 0).collect(Collectors.averagingInt(i -> i));
         System.out.println(average);
 
-        //11. Convert a list of integers to a comma-separated string using Streams.
+        //11. a . Convert a list of String to a comma-separated string using Streams.
         List<String> namesList4 = List.of("adam", "roman", "alex","ani");
         String joiningString = namesList4.stream().collect(Collectors.joining(", "));
         System.out.println(joiningString);
+
+        //11. b . Convert a list of integers to a comma-separated string using Streams.
+        List<Integer> integerList = List.of(1, 2, 3, 4);
+        String collect = integerList.stream().map(String::valueOf).collect(Collectors.joining(", "));
+        System.out.println(collect);
+
 
         //12. From a list of words, find the word with the maximum length using Streams.
         List<String> namesList5 = List.of("adam", "roman", "alex","ani");

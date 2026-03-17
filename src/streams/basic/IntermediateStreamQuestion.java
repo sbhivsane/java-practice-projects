@@ -214,6 +214,7 @@ public class IntermediateStreamQuestion {
         List<String> namesList = List.of("sagar", "kamlesh", "nilesh");
         Character[] array = namesList.stream().flatMapToInt(s -> s.chars()).distinct().mapToObj(i -> (char) i).toArray(Character[]::new);
 
+
         //13. **Given a list of strings**, *sort them by length* using Streams.
         List<String> sortedBasedOnLength = namesList.stream().sorted((s1, s2) -> s1.length() - s2.length()).toList();
         System.out.println(sortedBasedOnLength);

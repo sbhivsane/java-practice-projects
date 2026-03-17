@@ -6,7 +6,7 @@ public class MoniterClient {
 
         Thread t1 = new Thread(()->m.task1(1));
         Thread t2 = new Thread(()->m.task2(2));
-        Thread t3 = new Thread(()->m.task22(3));
+        Thread t3 = new Thread(()->m.task3(3));
 
         t1.start();
         t2.start();
